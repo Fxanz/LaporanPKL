@@ -58,7 +58,7 @@ body {
 .home {
   z-index: 3;
   flex-direction: row;
-  height: 280px;
+  margin-bottom: -3.5rem;
 }
 .home .row {
   margin-top: 100px;
@@ -79,10 +79,17 @@ body {
   font-family: "Open Sans", sans-serif;
   border-radius: 50px;
 }
+.home .btn-home .btn-contact:hover {
+  background-color: #212121;
+  color: #ffffff;
+}
 .home .img-container {
   margin-top: -3rem;
   width: 50%;
   z-index: -2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .home .img-container img {
   max-width: 100%;
@@ -96,7 +103,8 @@ body {
   color: #ffffff;
   font-weight: 700;
   background-color: #323232;
-  min-height: 400px;
+  min-height: 700px;
+  text-align: center;
 }
 .aboutme .col {
   padding-top: 5rem;
@@ -109,10 +117,11 @@ body {
 }
 .aboutme .social-icon {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 5rem;
 }
 .aboutme .social-icon i {
-  font-size: 20px;
+  font-size: 25px;
   margin-right: 2rem;
   color: white;
   transition: all 0.5s ease;
@@ -128,168 +137,179 @@ body {
 
 /* END OF ABOUT ME */
 /* MY PROJECT */
+.myproject {
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  min-height: 1000px;
+}
+.myproject .col {
+  width: 50%;
+  margin-top: 8rem;
+}
+.myproject a.col-lg-3 {
+  width: auto;
+}
+.myproject .project {
+  width: 20rem;
+  height: 15rem;
+  border-radius: 10px;
+  border: 5px inset #323232;
+  border-radius: 40px;
+}
+.myproject .project-1 {
+  background-image: url("../img/project/nft-result.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.myproject .project-2 {
+  background-image: url("../img/project/product-preview-result.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.myproject .project-3 {
+  background-image: url("../img/project/qr-result.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.myproject .project-4 {
+  background-image: url("../img/project/nft-result.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.myproject .project-5 {
+  background-image: url("../img/project/product-preview-result.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.myproject .project-6 {
+  background-image: url("../img/project/qr-result.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.myproject .btn-more {
+  background-color: #ffffff;
+  color: #212121;
+  border: none;
+  width: 10rem;
+  font-family: "Quicksand", sans-serif !important;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+.myproject .btn-more:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
 /* END OF MY PROJECT */
-@media only screen and (min-width: 768px) {
-  .home {
-    padding-top: 3rem;
+/* INTERNSHIP */
+.internship {
+  margin-top: 5rem;
+  min-height: 450px;
+  color: white;
+  text-align: center;
+  font-family: "Quicksand", sans-serif !important;
+}
+.internship .internship-box {
+  padding: 5rem 0;
+  background-color: red;
+  width: 100%;
+  height: 15rem;
+  border-radius: 40px;
+}
+.internship .internship-box h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.internship .internship-box .btn {
+  margin-top: 1rem;
+  border: none;
+  background-color: #212121;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 22px;
+  border-radius: 40px;
+  width: 12rem;
+  height: 60px;
+  transition: all 0.5s ease;
+}
+.internship .internship-box .btn:hover {
+  background-color: #ffffff;
+  color: #212121;
+}
+
+/* END OF INTERNSHIP */
+/* MEDIA QUERY */
+@media only screen and (min-width: 770px) {
+  .home .home-detail {
+    margin-top: 2rem;
   }
   .home .heading {
-    font-size: 36px;
+    font-size: 30px;
+  }
+  .aboutme {
+    min-height: 500px;
+    margin-top: -5rem;
+    text-align: start;
+  }
+  .aboutme .social-icon {
+    justify-content: start;
+  }
+  .internship h2 {
+    margin-top: -1rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .navbar-brand .home {
-    padding-top: 3rem;
-    height: 650px;
-    flex-direction: row;
+  .home {
+    margin-top: 8rem;
   }
-  .navbar-brand .home .home-detail {
-    width: 45%;
+  .home img.img-fluid.human-img {
+    width: 80%;
   }
-  .navbar-brand .home .row {
-    margin-top: 100px;
+  .home .heading {
+    font-size: 40px;
   }
-  .navbar-brand .home .img-container {
-    margin-top: 0;
-    width: 50%;
-    z-index: -2;
+  .aboutme {
+    margin-top: -5rem;
   }
-  .navbar-brand .home .img-container img {
-    max-width: 100%;
-    width: 100%;
-    position: relative;
-  }
-  .navbar-brand .home .btn-contact {
-    border: 3px solid black;
-    font-weiht: 700;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-  }
-  .navbar-brand .home .btn-contact:hover {
-    background-color: black;
-    color: white;
-  }
-  .navbar-nav {
-    gap: 2rem;
-  }
-  .home .content-left {
-    padding-bottom: 40px;
-  }
+}
+@media only screen and (min-width: 1200px) {
   .home .heading {
     font-size: 50px;
   }
-  .human-img {
-    max-width: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  .home .home-detail {
-    margin-top: 10rem;
-  }
   .aboutme {
-    color: #ffffff;
-    font-weight: 700;
-    gap: 20rem;
-    margin-top: -11rem;
-    min-height: 600px;
-  }
-  .aboutme .col {
-    padding-top: 10rem;
-  }
-  .aboutme .row {
-    margin-top: 370px;
-  }
-  .aboutme h1 {
-    font-size: 35px;
-    color: #ffffff;
-    font-weight: 700;
-    font-family: "Quicksand", sans-serif !important;
-  }
-  .aboutme .social-icon {
-    display: flex;
-    gap: 1rem;
-  }
-  .aboutme .social-icon i {
-    font-size: 30px;
-    margin-right: 2rem;
-    color: white;
-    transition: all 0.5s ease;
-  }
-  .aboutme .social-icon i:hover {
-    color: red;
-  }
-  .aboutme .social-icon .box {
-    width: 50px;
-    height: 50px;
-    background-color: red;
+    margin-top: -7.5rem;
   }
   .myproject {
-    font-weight: 700;
-    color: #ffffff;
-    text-align: center;
-    min-height: 1000px;
+    min-height: auto;
   }
-  .myproject .col {
-    margin-top: 8rem;
+}
+@media only screen and (min-width: 1400px) {
+  .home .heading {
+    font-size: 55px;
   }
-  .myproject .project {
-    width: 20rem;
-    height: 15rem;
-    margin-top: 3rem;
-    border-radius: 10px;
-    border: 5px inset #323232;
-    border-radius: 40px;
+  .home .home-detail {
+    margin-top: 4rem;
   }
-  .myproject .project-1 {
-    background-image: url("../img/project/nft-result.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .myproject .project-2 {
-    background-image: url("../img/project/product-preview-result.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .myproject .project-3 {
-    background-image: url("../img/project/qr-result.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .internship {
-    min-height: 450px;
-    color: white;
-    text-align: center;
-    font-family: "Quicksand", sans-serif !important;
+  .aboutme {
+    margin-top: -8.5rem;
   }
   .internship .internship-box {
-    padding: 5rem 0;
-    background-color: red;
-    width: 100%;
     height: 20rem;
-    border-radius: 40px;
   }
   .internship .internship-box h2 {
-    font-weight: 700;
     font-size: 40px;
   }
-  .internship .internship-box .btn {
-    margin-top: 50px;
-    border: none;
-    background-color: #212121;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 22px;
-    border-radius: 40px;
-    width: 12rem;
-    height: 60px;
-    transition: all 0.5s ease;
+  .internship .internship-box .btn-lg {
+    margin-top: 4rem;
   }
-  .internship .internship-box .btn:hover {
-    background-color: #ffffff;
-    color: #212121;
-  }
-}/*# sourceMappingURL=style.css.map */
+}
+/* END OF MEDIA QUERY *//*# sourceMappingURL=style.css.map */
