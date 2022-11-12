@@ -1,10 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+$primary-color: #212121;
+$secondary-color: #323232;
+$main-red: #ff0000;
+$main-white: #ffffff;
 
-@media only screen and (max-width: 7680px) {
+$main-font: "Quicksand", sans-serif !important;
+$secondary-font: "Open Sans", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
-@media only screen and (max-width: 1080px) {
+html {
+  scroll-behavior: smooth;
 }
-@media only screen and (max-width: 1450px) {
-  .test {
-    padding-top: 50px;
+body {
+  font-family: $secondary-font;
+  background-color: $primary-color;
+}
+
+.heading {
+  font-family: $main-font;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subheading {
+  font-weight: 400;
+  font-size: 16px;
+}
+/* NAVBAR */
+.navbar-brand {
+  font-weight: 700;
+  font-family: $secondary-font;
+}
+.navbar {
+  background-color: $primary-color !important;
+}
+.navbar-brand span {
+  color: $main-red;
+}
+.navlink {
+  font-family: $secondary-font;
+}
+.nav-link.active {
+  font-weight: 700;
+  color: $main-red !important;
+}
+
+/* END OF NAVBAR */
+
+/* HOME */
+.home {
+  z-index: 3;
+  flex-direction: row;
+  height: 280px;
+
+  .row {
+    margin-top: 100px;
   }
+  .home-detail {
+    width: 45%;
+  }
+  .heading {
+    color: $main-white;
+    span {
+      color: $main-red;
+    }
+  }
+  .btn-home {
+    .btn-contact {
+      background-color: #ffffff;
+      color: black;
+      font-weight: 700;
+      font-family: $secondary-font;
+      border-radius: 50px;
+    }
+  }
+  .img-container {
+    margin-top: -3rem;
+    width: 50%;
+    z-index: -2;
+    img {
+      max-width: 100%;
+      width: 100%;
+      position: relative;
+    }
+  }
+}
+
+/* END OF HOME */
+/* ABOUT ME */
+
+.aboutme {
+  color: $main-white;
+  font-weight: 700;
+  background-color: $secondary-color;
+  min-height: 400px;
+  .col {
+    padding-top: 5rem;
+  }
+
+  h1 {
+    font-size: 25px;
+    color: $main-white;
+    font-weight: 700;
+    font-family: $main-font;
+  }
+  .social-icon {
+    display: flex;
+    gap: 1rem;
+    i {
+      font-size: 20px;
+      margin-right: 2rem;
+      color: white;
+      transition: all 0.5s ease;
+      &:hover {
+        color: red;
+      }
+    }
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+    }
+  }
+}
+/* END OF ABOUT ME */
+/* MY PROJECT */
+
+/* END OF MY PROJECT */
+
+@media only screen and (min-width: 768px) {
+  .home {
+    padding-top: 3rem;
+    // height: 640px;
+  }
+  .home .heading {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navbar-brand .home {
+    padding-top: 3rem;
+    height: 650px;
+    flex-direction: row;
+
+    .home-detail {
+      width: 45%;
+    }
+    .row {
+      margin-top: 100px;
+    }
+    .img-container {
+      margin-top: 0;
+      width: 50%;
+      z-index: -2;
+      img {
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+      }
+    }
+    .btn-contact {
+      border: 3px solid black;
+      font-weiht: 700;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+  .navbar-nav {
+    gap: 2rem;
+  }
+  .home .content-left {
+    padding-bottom: 40px;
+  }
+  .home .heading {
+    font-size: 50px;
+  }
+  .human-img {
+    max-width: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .home {
+    .home-detail {
+      margin-top: 10rem;
+    }
+  }
+
+  .aboutme {
+    color: $main-white;
+    font-weight: 700;
+    gap: 20rem;
+    margin-top: -11rem;
+    min-height: 600px;
+
+    .col {
+      padding-top: 10rem;
+    }
+    .row {
+      margin-top: 370px;
+    }
+    h1 {
+      font-size: 35px;
+      color: $main-white;
+      font-weight: 700;
+      font-family: $main-font;
+    }
+    .social-icon {
+      display: flex;
+      gap: 1rem;
+      i {
+        font-size: 30px;
+        margin-right: 2rem;
+        color: white;
+        transition: all 0.5s ease;
+        &:hover {
+          color: red;
+        }
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+      }
+    }
+  }
+  .myproject {
+    font-weight: 700;
+    color: $main-white;
+    text-align: center;
+    min-height: 1000px;
+    .col {
+      margin-top: 8rem;
+    }
+    .project {
+      background-color: blue;
+      width: 20rem;
+      height: 15rem;
+      margin-top: 3rem;
+      border-radius: 10px;
+      border: 5px inset $secondary-color;
+      border-radius: 40px;
+    }
+
+    .project-1 {
+      background-image: url("/img/project/nft-result.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .project-2 {
+      background-image: url("/img/project/product-preview-result.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .project-3 {
+      background-image: url("/img/project/qr-result.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .internship {
+    min-height: 450px;
+    color: white;
+    text-align: center;
+    font-family: $main-font;
+
+    .internship-box {
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+      }
+      .btn {
+        margin-top: 50px;
+        border: none;
+        background-color: $primary-color;
+        color: $main-white;
+        font-weight: 700;
+        font-size: 22px;
+        border-radius: 40px;
+        width: 12rem;
+        height: 60px;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: $main-white;
+          color: $primary-color;
+        }
+      }
+      padding: 5rem 0;
+      background-color: red;
+      width: 100%;
+      height: 20rem;
+      border-radius: 40px;
+    }
+  }
+}
+@media only screen and (min-width: 1450px) {
 }
