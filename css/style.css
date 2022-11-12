@@ -243,19 +243,19 @@ body {
     border-radius: 40px;
   }
   .myproject .project-1 {
-    background-image: url("/img/project/nft-result.png");
+    background-image: url("img/project/nft-result.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
   .myproject .project-2 {
-    background-image: url("/img/project/product-preview-result.png");
+    background-image: url("img/project/product-preview-result.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
   .myproject .project-3 {
-    background-image: url("/img/project/qr-result.png");
+    background-image: url("img/project/qr-result.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
