@@ -1,1 +1,56 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #212121;
+}
+
+.heading {
+  font-family: "Quicksand", sans-serif !important;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subheading {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* NAVBAR */
+.navbar-brand {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  background-color: #212121 !important;
+}
+
+.navbar-brand span {
+  color: #ff0000;
+}
+
+.navlink {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-link.active {
+  font-weight: 700;
+  color: #ff0000 !important;
+}
+
+/* END OF NAVBAR *//*# sourceMappingURL=style.css.map */

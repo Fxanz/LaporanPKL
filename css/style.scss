@@ -43,6 +43,13 @@ body {
 .navbar {
   background-color: $primary-color !important;
 }
+.dropdown-item {
+  font-weight: 700;
+  &:focus {
+    color: white;
+    background-color: red;
+  }
+}
 .navbar-brand span {
   color: $main-red;
 }
