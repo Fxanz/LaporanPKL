@@ -87,6 +87,7 @@ body {
   color: black;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
+  border: 5px solid #323232;
   border-radius: 50px;
 }
 .home .btn-home .btn-contact:hover {
@@ -126,6 +127,9 @@ body {
   font-weight: 700;
   font-family: "Quicksand", sans-serif !important;
 }
+.aboutme h2 {
+  font-size: 30px;
+}
 .aboutme .social-icon {
   display: flex;
   justify-content: center;
@@ -151,7 +155,12 @@ body {
   justify-content: center;
   justify-content: center;
 }
-.aboutme .progress-menu .figma, .aboutme .progress-menu .wordpress, .aboutme .progress-menu .html {
+.aboutme .progress-menu h4 {
+  font-weight: 700;
+}
+.aboutme .progress-menu .figma,
+.aboutme .progress-menu .wordpress,
+.aboutme .progress-menu .html {
   margin-top: 1rem;
 }
 .aboutme .progress-menu .progress {
@@ -172,6 +181,11 @@ body {
 .myproject .col {
   width: 50%;
   margin-top: 8rem;
+}
+.myproject .col h1 {
+  font-family: "Quicksand", sans-serif !important;
+  margin-bottom: 2rem;
+  font-weight: 700;
 }
 .myproject a.col-lg-3 {
   width: auto;
