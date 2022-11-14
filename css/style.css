@@ -288,7 +288,7 @@ body {
     width: 50%;
   }
   .home .heading {
-    font-size: 30px;
+    font-size: 33px;
   }
   .home .img-container {
     width: 50%;
@@ -313,7 +313,7 @@ body {
     width: 80%;
   }
   .home .heading {
-    font-size: 40px;
+    font-size: 43px;
   }
   .navbar-nav {
     gap: 3rem;
@@ -324,7 +324,7 @@ body {
 }
 @media only screen and (min-width: 1200px) {
   .home .heading {
-    font-size: 50px;
+    font-size: 53px;
   }
   .aboutme {
     margin-top: -7.5rem;
