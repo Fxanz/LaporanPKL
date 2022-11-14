@@ -65,16 +65,18 @@ body {
     margin-top: 100px;
   }
   .home-detail {
-    width: 45%;
+    width: 60%;
   }
   .heading {
     color: $main-white;
+    font-size: 17px;
     span {
       color: $main-red;
     }
   }
   .btn-home {
     .btn-contact {
+      font-size: 15px;
       background-color: $main-white;
       color: black;
       font-weight: 700;
@@ -88,7 +90,7 @@ body {
   }
   .img-container {
     margin-top: -3rem;
-    width: 50%;
+    width: 40%;
     z-index: -2;
     display: flex;
     flex-direction: column;
@@ -110,6 +112,7 @@ body {
   background-color: $secondary-color;
   min-height: 700px;
   text-align: center;
+  margin-top: 2rem;
   .col {
     padding-top: 5rem;
   }
@@ -227,7 +230,7 @@ body {
   font-family: $main-font;
 
   .internship-box {
-    padding: 5rem 0;
+    padding: 2.5rem 0;
     background-color: red;
     width: 100%;
     height: 15rem;
@@ -257,13 +260,45 @@ body {
 /* END OF INTERNSHIP */
 
 /* MEDIA QUERY */
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 342px) {
   .home{
-    .home-detail{
-      margin-top: 2rem;
+    .heading{
+      font-size: 20px;
     }
+  }
+}
+@media only screen and (min-width: 396px) {
+  .home{
+    .heading{
+      font-size: 25px;
+    }
+  }
+}
+@media only screen and (min-width: 485px) {
+  .home{
     .heading{
       font-size: 30px;
+    }
+  }
+}
+@media only screen and (min-width: 570px) {
+  .home{
+    .heading{
+      font-size: 31px;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home {
+    .home-detail {
+      margin-top: 2rem;
+      width: 50%;
+    }
+    .heading {
+      font-size: 30px;
+    }
+    .img-container{
+      width: 50%;
     }
   }
 
@@ -275,66 +310,63 @@ body {
       justify-content: start;
     }
   }
-  .internship{
-    h2{
+  .internship {
+    h2 {
       margin-top: -1rem;
     }
   }
 }
 @media only screen and (min-width: 992px) {
-  .home{
-    
+  .home {
     margin-top: 8rem;
     img.img-fluid.human-img {
       width: 80%;
     }
-    .heading{
+    .heading {
       font-size: 40px;
     }
   }
-  .aboutme{
+  .navbar-nav {
+    gap: 3rem;
+  }
+  .aboutme {
     margin-top: -5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .home{
-    .heading{
+  .home {
+    .heading {
       font-size: 50px;
     }
   }
-  .aboutme{
+  .aboutme {
     margin-top: -7.5rem;
-    
   }
-  .myproject{
+  .myproject {
     min-height: auto;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .home{
-    
-    .heading{
-      font-size: 55px;
+  .home {
+    .heading {
+      font-size: 70px;
     }
-    .home-detail{
+    .home-detail {
       margin-top: 4rem;
-      
     }
   }
-  .aboutme{
-    margin-top: -8.5rem;
-    
+  .aboutme {
+    margin-top: -6.5rem;
   }
-  
-  .internship{
-    .internship-box{
+
+  .internship {
+    .internship-box {
       height: 20rem;
-      h2{
+      h2 {
         font-size: 40px;
       }
-      .btn-lg{
-        
+      .btn-lg {
         margin-top: 4rem;
       }
     }
