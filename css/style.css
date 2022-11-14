@@ -145,6 +145,21 @@ body {
   height: 50px;
   background-color: red;
 }
+.aboutme .left-aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+}
+.aboutme .progress-menu .figma, .aboutme .progress-menu .wordpress, .aboutme .progress-menu .html {
+  margin-top: 1rem;
+}
+.aboutme .progress-menu .progress {
+  background-color: black;
+}
+.aboutme .progress-menu .progress .progress-bar {
+  background-color: red;
+}
 
 /* END OF ABOUT ME */
 /* MY PROJECT */

@@ -149,6 +149,23 @@ body {
       background-color: red;
     }
   }
+  .left-aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+  }
+  .progress-menu {
+    .figma,.wordpress,.html{
+      margin-top: 1rem;
+    }
+    .progress {
+      background-color: black;
+      .progress-bar {
+        background-color: red;
+      }
+    }
+  }
 }
 /* END OF ABOUT ME */
 
