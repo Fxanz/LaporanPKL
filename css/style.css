@@ -196,21 +196,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-.myproject .btn-more {
-  background-color: #ffffff;
-  color: #212121;
-  border: none;
-  width: 10rem;
-  font-family: "Quicksand", sans-serif !important;
-  border-radius: 40px;
-  font-weight: 700;
-  font-size: 20px;
-  transition: all 0.5s ease;
-}
-.myproject .btn-more:hover {
-  background-color: #ff0000;
-  color: #ffffff;
-}
 
 /* END OF MY PROJECT */
 /* INTERNSHIP */

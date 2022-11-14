@@ -204,21 +204,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
   }
-  .btn-more {
-    background-color: $main-white;
-    color: $primary-color;
-    border: none;
-    width: 10rem;
-    font-family: $main-font;
-    border-radius: 40px;
-    font-weight: 700;
-    font-size: 20px;
-    transition: all 0.5s ease;
-    &:hover {
-      background-color: $main-red;
-      color: $main-white;
-    }
-  }
 }
 /* END OF MY PROJECT */
 /* INTERNSHIP */
@@ -261,34 +246,34 @@ body {
 
 /* MEDIA QUERY */
 @media only screen and (min-width: 342px) {
-  .home{
-    .heading{
+  .home {
+    .heading {
       font-size: 20px;
     }
   }
 }
 @media only screen and (min-width: 396px) {
-  .home{
-    .heading{
+  .home {
+    .heading {
       font-size: 25px;
     }
   }
 }
 @media only screen and (min-width: 485px) {
-  .home{
-    .heading{
+  .home {
+    .heading {
       font-size: 30px;
     }
   }
 }
 @media only screen and (min-width: 570px) {
-  .home{
-    .heading{
+  .home {
+    .heading {
       font-size: 31px;
     }
   }
-  .internship{
-    h2{
+  .internship {
+    h2 {
       padding-top: 2rem;
     }
   }
@@ -302,7 +287,7 @@ body {
     .heading {
       font-size: 30px;
     }
-    .img-container{
+    .img-container {
       width: 50%;
     }
   }
@@ -366,7 +351,7 @@ body {
   }
 
   .internship {
-    h2{
+    h2 {
       padding-top: 4rem;
     }
     .internship-box {
