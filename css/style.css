@@ -270,6 +270,9 @@ body {
   .home .heading {
     font-size: 31px;
   }
+  .internship h2 {
+    padding-top: 2rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   .home .home-detail {
@@ -331,6 +334,9 @@ body {
   }
   .aboutme {
     margin-top: -6.5rem;
+  }
+  .internship h2 {
+    padding-top: 4rem;
   }
   .internship .internship-box {
     height: 20rem;
