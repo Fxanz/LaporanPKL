@@ -75,11 +75,20 @@ body {
   width: 60%;
 }
 .home .heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   color: #ffffff;
   font-size: 17px;
 }
 .home .heading span {
   color: #ff0000;
+}
+.home .btn-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home .btn-home .btn-contact {
   font-size: 15px;
@@ -95,12 +104,10 @@ body {
   color: #ffffff;
 }
 .home .img-container {
-  margin-top: -3rem;
-  width: 40%;
-  z-index: -2;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  z-index: -1;
 }
 .home .img-container img {
   max-width: 100%;
@@ -303,13 +310,21 @@ body {
   }
   .home .heading {
     font-size: 33px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
   }
   .home .img-container {
     width: 50%;
   }
+  .home .btn-home {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
   .aboutme {
     min-height: 500px;
-    margin-top: -5rem;
+    margin-top: -8rem;
     text-align: start;
   }
   .aboutme .social-icon {
@@ -333,7 +348,7 @@ body {
     gap: 3rem;
   }
   .aboutme {
-    margin-top: -5rem;
+    margin-top: -8rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -341,7 +356,7 @@ body {
     font-size: 53px;
   }
   .aboutme {
-    margin-top: -7.5rem;
+    margin-top: -10rem;
   }
   .myproject {
     min-height: auto;
@@ -355,7 +370,7 @@ body {
     margin-top: 4rem;
   }
   .aboutme {
-    margin-top: -6.5rem;
+    margin-top: -9rem;
   }
   .internship h2 {
     padding-top: 4rem;
