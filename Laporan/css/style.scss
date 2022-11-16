@@ -79,6 +79,10 @@ body {
 .laporan {
   color: white;
   margin-top: 8rem;
+
+  .start-header{
+    margin-top: 4rem;
+  }
   h1,
   h2 {
     font-family: $main-font;

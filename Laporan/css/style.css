@@ -80,6 +80,9 @@ body {
   color: white;
   margin-top: 8rem;
 }
+.laporan .start-header {
+  margin-top: 4rem;
+}
 .laporan h1,
 .laporan h2 {
   font-family: "Quicksand", sans-serif !important;
