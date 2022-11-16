@@ -61,6 +61,61 @@ body {
   color: #ff0000 !important;
 }
 
+.list-group {
+  list-style: decimal inside;
+}
+
+.list-group-item {
+  border: none;
+  display: list-item;
+}
+
+.bold {
+  font-weight: 600;
+}
+
 /* END OF NAVBAR */
-/* HOME */
-/* END OF HOME *//*# sourceMappingURL=style.css.map */
+/* LAPORAN */
+.laporan {
+  color: white;
+  margin-top: 8rem;
+}
+.laporan h1,
+.laporan h2 {
+  font-family: "Quicksand", sans-serif !important;
+  font-weight: 700;
+}
+.laporan li.list-group-item {
+  background-color: transparent;
+  color: white;
+}
+.laporan p {
+  text-align: justify;
+}
+.laporan .img-perusahaan-container, .laporan .img-struktur-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.laporan .img-perusahaan, .laporan .img-struktur {
+  padding: 2rem;
+  width: 300px;
+  background-color: white !important;
+  border-radius: 10px;
+}
+.laporan .img-struktur {
+  width: 450px;
+}
+
+/* END OF LAPORAN */
+/* MEDIA QUERY */
+@media only screen and (max-width: 768px) {
+  .laporan p {
+    text-align: start;
+  }
+  .laporan .img-struktur {
+    width: 300px;
+  }
+}
+/* END OF MEDIA QUERY *//*# sourceMappingURL=style.css.map */
