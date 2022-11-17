@@ -25,6 +25,19 @@ body {
   font-weight: bold;
 }
 
+.dropdown-menu {
+  background-color: #212121;
+  border: 2px solid white;
+}
+.dropdown-menu .dropdown-item {
+  color: white;
+  transition: all 0.5s ease;
+}
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: red;
+}
+
 .subheading {
   font-weight: 400;
   font-size: 16px;
@@ -95,20 +108,67 @@ body {
 .laporan p {
   text-align: justify;
 }
-.laporan .img-perusahaan-container, .laporan .img-struktur-container {
+.laporan .img-perusahaan-container,
+.laporan .img-struktur-container,
+.laporan .produk-perusahaan {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
 }
-.laporan .img-perusahaan, .laporan .img-struktur {
+.laporan .img-perusahaan,
+.laporan .img-struktur {
+  border-radius: 15px;
   padding: 2rem;
   width: 300px;
   background-color: white !important;
-  border-radius: 10px;
 }
-.laporan .img-struktur {
-  width: 450px;
+
+.myproject {
+  color: #ffffff;
+}
+.myproject .col {
+  width: 50%;
+  margin-top: 8rem;
+}
+.myproject a.col-lg-3 {
+  width: auto;
+}
+.myproject .produk {
+  background-color: #ffffff;
+  width: 20rem;
+  height: 15rem;
+  border-radius: 10px;
+  border: 5px inset #323232;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.myproject .produk-perusahaan {
+  gap: 1rem;
+}
+.myproject .microsoft {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/LaporanWebPhoto/jasa-microsoftOffice.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.myproject .photoshop {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/LaporanWebPhoto/jasa-photoshop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.myproject .web {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/LaporanWebPhoto/jasa-web.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* END OF LAPORAN */

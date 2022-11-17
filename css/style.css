@@ -40,11 +40,15 @@ body {
   background-color: #212121 !important;
 }
 
-.dropdown-item {
-  font-weight: 700;
+.dropdown-menu {
+  background-color: #212121;
+  border: 2px solid white;
 }
-.dropdown-item:focus {
+.dropdown-menu .dropdown-item {
   color: white;
+  transition: all 0.5s ease;
+}
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
   background-color: red;
 }
 

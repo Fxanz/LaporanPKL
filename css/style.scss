@@ -43,10 +43,14 @@ body {
 .navbar {
   background-color: $primary-color !important;
 }
-.dropdown-item {
-  font-weight: 700;
-  &:focus {
+.dropdown-menu{
+  background-color: #212121;
+  border: 2px solid white;
+  .dropdown-item{
     color: white;
+    transition: all .5s ease;
+  }
+  .dropdown-item:hover,.dropdown-item:focus{
     background-color: red;
   }
 }
