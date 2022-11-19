@@ -48,7 +48,8 @@ body {
   color: white;
   transition: all 0.5s ease;
 }
-.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
   background-color: red;
 }
 
@@ -227,19 +228,19 @@ body {
   background-repeat: no-repeat;
 }
 .myproject .project-4 {
-  background-image: url("../img/project/nft-result.png");
+  background-image: url("../img/project/portfolio.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .myproject .project-5 {
-  background-image: url("../img/project/product-preview-result.png");
+  background-image: url("../img/project/laporan-web.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .myproject .project-6 {
-  background-image: url("../img/project/qr-result.png");
+  background-image: url("../img/project/website-sell.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
